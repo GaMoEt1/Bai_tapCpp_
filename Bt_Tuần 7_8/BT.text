@@ -1,0 +1,40 @@
+Bài 1: Chương trình sau thực hiện phép nhân ma trận : D = A*B*C .
+ Trong đó: A,B là các ma trận vuông, C là ma trận chữ nhật. 
+Trong chương trình có 3 cặp hàm trùng tên để thực hiện 3 nhiệm vụ 
+(nhưng trên hai đối tượng khác nhau là ma trận vuông và chữ nhật)
+-	Nhập ma trận
+-	Nhân hai ma trận 
+-	In ma trận 
+typedef int MT[20][20];
+void nhapmt(MT a, char* ten, int m, int n); //nhap ma tran chu nhat +
+void inmt(MT a, char* ten, int m, int n); //in ma tran chu nhat+
+void nhapmt(MT a, char* ten, int n); //nhap ma tran vuong+
+void intmt(MT a, char* ten, int n); //in ma tran vuong
+void nhanmt(MT a, MT b, MT c, int m, int n, int p); //nhan 2 ma tran chu nhat
+void nhanmt(MT a, MT b, MT c, int n); //nhan hai ma tran vuong
+
+Bài 2 : Thực hiện phép chồng toán tử cho biến phân số tương ứng với các khai báo nguyên mẫu sau 
+typedef struct
+{
+    int a, b;
+}PS;
+ostream& operator<< (ostream& os, PS p);
+istream& operator>> (istream& is, PS& p);
+int uscln(int x, int y);
+PS rutgon(PS p);
+PS operator+(PS p1, PS p2);
+PS operator-(PS p1, PS p2);
+PS operator*(PS p1, PS p2);
+PS operator/(PS p1, PS p2);
+int main()
+{
+    PS p, q, z, u, v;
+    PS s;
+    cout << "\nNhap cac phan so p, q, z, u, v\n";
+    cin >> p >> q>> z>> u>> v;
+    s = (p - q * z) / (u + v);
+    cout << "\n Phan so s = " << s;
+}
+
+
+Chú ý: Tìm hiểu về git, github và cách commit code lên github 

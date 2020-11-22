@@ -1,0 +1,61 @@
+Bài 1: Những biểu thức khai báo nào sau đây đúng
+
+1. int *p = (int*)1000;// đáp án 1 đúng 
+
+2. double d = 1e-10;// đáp án 2 đúng 
+
+3. short s[];
+
+4. int n =3; A[n];
+
+Bài 2: Giá trị của biểu thức nào không phải kiểu số nguyên nếu khai báo
+
+int a ; char c;
+
+1. a + 1.0;
+
+2. c + 1;
+
+3. char(c+32);
+
+4. c + a;
+
+Viết chương trình để kiểm tra
+
+Bài 3: Xác định giá trị và kiểu dữ liệu được in ra tương ứng
+
+int n = 25;
+
+float n3 = 11;
+
+const double p = 3.1412;
+
+unsigned q = 63000;
+
+char c = 'n';
+
+enum WeekDay{Mon = 2,Tue, Wed, Thu, Fri, Sat, Sun = 1 };
+
+double y = 12.3456789e16;
+
+char *ch = "welcome C++";
+
+int *a = &n;
+
+float n1 = n3/3;
+
+std::cout << "value of n1 : "<< std::setprecision(10) << n1 << '\n';//3.6666666667
+
+cout << "value of p : "<< p+5 << "\n"; //p+5=8.1412
+
+cout << "value of q : "<< q << "\n";//q=63000
+
+cout << "value of x : "<< WeekDay(Sat) << "\n";//value of x : 7
+
+cout << "value of y : "<< y << "\n";//value of y : 1.23457e+17
+
+cout << "value of ch : "<< ch << "\n";// lỗi 
+
+cout << "addr of n : "<< a << "\n";// địa chỉ của biến n
+
+cout << "addr of ch : "<< (void*)ch << "\n";

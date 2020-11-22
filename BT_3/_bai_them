@@ -1,0 +1,55 @@
+
+#include <iostream>
+using namespace std;
+
+int is_Blum(int x) {// ý 1 
+
+	int i = 2;
+
+	while (true)
+	{
+		if (i > x / 2) return -1;
+		if (x % i == 0) {
+			int y = x / i;
+			int j = 2;
+			while (true) {
+				if (j > y / 2) return 1;
+				if (y % j == 0) return -1;
+				j++;
+			}
+		}
+		i++;
+	}
+
+}
+int so_to_tu_Blum(int x) {// ý 2
+	int i = 2;
+	while (true)
+	{
+		if (x % i == 0) return i;
+		i++;
+	}
+}
+int main()
+{
+	//  gọp 3 ý 
+	int n;
+	while (true) {
+
+		cout << " nhap gia tri cua N="; cin >> n;
+
+
+		if (n < 4) cout << " so nguyen la tich cua 2 so nguyen to trong khoang  1->n là : khong co so nao -_-";
+		else
+
+			cout << " so nguyen la tich cua 2 so nguyen to trong khoang  1->n là :" << endl;
+		for (int i = 0; i <= n; i++) {
+			if (is_Blum(i) == 1) cout << " _ " << i << "=" << so_to_tu_Blum(i) << "*" << i / so_to_tu_Blum(i) << endl;
+		}
+	}
+
+	cout << endl;
+
+}
+
+

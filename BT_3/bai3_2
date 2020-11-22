@@ -1,0 +1,8 @@
+Giống nhau :
+struct và union :định nghĩa ,khai báo biến ,truy cập đến các thành phần 
+Khác nhau:
+-union
++Các thành phần của union đều lưu trữ tại cùng 1 địa chỉ,kích cỡ lưu chữ của union là kích cỡ của 1 thành phần có chứa dữ liệu lớn nhất
++Tại 1 thời điểm ,union lưu trữ 1 trường duy nhất
+-struct 
++ kích thước bằng tổng kích thước các thành phần trong struct
