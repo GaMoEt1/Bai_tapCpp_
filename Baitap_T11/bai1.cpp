@@ -251,7 +251,7 @@ int main()
     DT f;
     f = -(p + q) * (r + s);
     cout<<"\n\n\n";
-    cout <<" f=-(p+q)8(r+s)= "<<f<<endl;
+    cout <<" f=-(p+q)*(r+s)= "<<f<<endl;
     cout <<" tai x=2,tinh theo Operator^ , f(2)="<<double(f^2)<<endl;
     cout<<" tai x=2,tinh theo F,f(2)="<<F(f,2)<<endl;
 
